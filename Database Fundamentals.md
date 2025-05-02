@@ -17,9 +17,12 @@ Properties of an ideal database
 
   ## Types Of Databases
 
-  1. Relational Databases: Also knowns as SQL databases, these databases use a relational model to organize data into into tables with rows and columns.
-  2. NoSQL Databases: These databases are designed to handle large amounts of unstructured or semi-structured data, such as documents, images, or videos.
+  1. Relational Databases: Also known as SQL databases, these databases use a relational model to organize data into tables with rows and columns.
+  2. Nosql Databases: These databases are designed to handle large amounts of unstructured or semi-structured data, such as documents, images, or videos.
   3. Column Databases: These databases store data in columns rather than rows, making them well-suited for data warehousing and analytical applications. (Amazon, Redshift, Google BigQuery)
   4. Graph Databases: These databases are used to store and query graph-structured data, such as social network connections or recommendation systems.
   5. Key-value Databases: These databases store data as a collection of keys and values, making them well-suited for caching and simple data storage needs (Redis and Amazon DynamoDB)
+
+     ### Relational Databases
+     Also known as SQL databases, these databases use a relational model to organize data into tables with rows and columns.
      
