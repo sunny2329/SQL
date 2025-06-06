@@ -120,3 +120,53 @@ WHERE age BETWEEN 18 AND 30
 - Use `DISTINCT` to avoid duplicates in SELECT.
 - Backup before mass data operations.
 - Use transactions for critical changes (`BEGIN`, `COMMIT`, `ROLLBACK`).
+
+
+---
+
+## 📊 SQL Aggregate Functions
+
+Aggregate functions perform calculations on multiple rows and return a single result.
+
+| Function   | Description                                | Example                                |
+|------------|--------------------------------------------|----------------------------------------|
+| `COUNT()`  | Counts number of rows                      | `SELECT COUNT(*) FROM users;`          |
+| `SUM()`    | Total sum of a column                      | `SELECT SUM(price) FROM products;`     |
+| `AVG()`    | Average value of a column                  | `SELECT AVG(age) FROM users;`          |
+| `MIN()`    | Minimum value in a column                  | `SELECT MIN(price) FROM products;`     |
+| `MAX()`    | Maximum value in a column                  | `SELECT MAX(score) FROM results;`      |
+
+> 💡 Aggregate functions are often used with `GROUP BY` to group the result by one or more columns.
+
+**Example with GROUP BY:**
+```sql
+SELECT department, COUNT(*) 
+FROM employees
+GROUP BY department;
+```
+
+---
+
+## 🔢 SQL Scalar Functions
+
+Scalar functions operate on a single value and return a single value.
+
+| Function       | Description                                | Example                                 |
+|----------------|--------------------------------------------|-----------------------------------------|
+| `UPPER()`      | Converts to uppercase                      | `SELECT UPPER(name) FROM users;`        |
+| `LOWER()`      | Converts to lowercase                      | `SELECT LOWER(email) FROM users;`       |
+| `LEN()` / `LENGTH()` | Returns length of a string          | `SELECT LENGTH(name) FROM users;`       |
+| `ROUND()`      | Rounds a number to specified decimals      | `SELECT ROUND(price, 2) FROM products;` |
+| `NOW()`        | Returns current date and time              | `SELECT NOW();`                         |
+| `SUBSTRING()`  | Extracts part of a string                  | `SELECT SUBSTRING(name, 1, 3) FROM users;` |
+
+---
+
+## 🧾 Summary of Concepts Covered
+
+- ✅ INSERT, SELECT, UPDATE, DELETE
+- 🔧 Comparison, Logical, and Special Operators
+- 📊 Aggregate Functions: COUNT, SUM, AVG, MIN, MAX
+- 🔢 Scalar Functions: UPPER, LOWER, LENGTH, ROUND, NOW, SUBSTRING
+- 🛡️ Best practices and examples included
+
